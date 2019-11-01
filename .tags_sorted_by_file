@@ -1,0 +1,50 @@
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+README	README.md	/^# README$/;"	c
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
+Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	module:ApplicationCable
+ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
+Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	module:ApplicationCable
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+Stock	app/models/stock.rb	/^class Stock < ApplicationRecord$/;"	c
+Team	app/models/team.rb	/^class Team < ApplicationRecord$/;"	c
+Transaction	app/models/transaction.rb	/^class Transaction < ApplicationRecord$/;"	c
+User	app/models/user.rb	/^class User < ApplicationRecord$/;"	c
+Wallet	app/models/wallet.rb	/^class Wallet < ApplicationRecord$/;"	c
+system!	bin/setup	/^def system!(*args)$/;"	f
+system!	bin/update	/^def system!(*args)$/;"	f
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	module:SimplePaymentNetwork
+SimplePaymentNetwork	config/application.rb	/^module SimplePaymentNetwork$/;"	m
+default	config/database.yml	/^default: &default$/;"	a
+CreateUsers	db/migrate/20191031214656_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.2]$/;"	c
+change	db/migrate/20191031214656_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+CreateTeams	db/migrate/20191031214729_create_teams.rb	/^class CreateTeams < ActiveRecord::Migration[5.2]$/;"	c
+change	db/migrate/20191031214729_create_teams.rb	/^  def change$/;"	f	class:CreateTeams
+CreateStocks	db/migrate/20191031214954_create_stocks.rb	/^class CreateStocks < ActiveRecord::Migration[5.2]$/;"	c
+change	db/migrate/20191031214954_create_stocks.rb	/^  def change$/;"	f	class:CreateStocks
+CreateWallets	db/migrate/20191031220111_create_wallets.rb	/^class CreateWallets < ActiveRecord::Migration[5.2]$/;"	c
+change	db/migrate/20191031220111_create_wallets.rb	/^  def change$/;"	f	class:CreateWallets
+CreateTransactions	db/migrate/20191031221549_create_transactions.rb	/^class CreateTransactions < ActiveRecord::Migration[5.2]$/;"	c
+change	db/migrate/20191031221549_create_transactions.rb	/^  def change$/;"	f	class:CreateTransactions
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+dependencies	package.json	/^  "dependencies": {}$/;"	o
+name	package.json	/^  "name": "simple_payment_network",$/;"	s
+private	package.json	/^  "private": true,$/;"	b
+The page you were looking for doesn't exist.	public/404.html	/^      <h1>The page you were looking for doesn't exist.<\/h1>$/;"	h
+The change you wanted was rejected.	public/422.html	/^      <h1>The change you wanted was rejected.<\/h1>$/;"	h
+We're sorry, but something went wrong.	public/500.html	/^      <h1>We're sorry, but something went wrong.<\/h1>$/;"	h
+ApplicationSystemTestCase	test/application_system_test_case.rb	/^class ApplicationSystemTestCase < ActionDispatch::SystemTestCase$/;"	c
+StockTest	test/models/stock_test.rb	/^class StockTest < ActiveSupport::TestCase$/;"	c
+TeamTest	test/models/team_test.rb	/^class TeamTest < ActiveSupport::TestCase$/;"	c
+TransactionTest	test/models/transaction_test.rb	/^class TransactionTest < ActiveSupport::TestCase$/;"	c
+UserTest	test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+WalletTest	test/models/wallet_test.rb	/^class WalletTest < ActiveSupport::TestCase$/;"	c
+TestCase	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c	module:ActiveSupport
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/

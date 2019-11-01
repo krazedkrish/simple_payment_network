@@ -1,0 +1,24 @@
+<div class="result-container">
+  <div class="result">
+    <div class="table">
+      <table class="bigger">
+        <tr>
+          <td><b>First Name <b></td>
+          <td><%= @user.first_name %></td>
+        </tr>
+        <tr>
+          <td><b>Last Name<b></td>
+          <td><%= @user.last_name %></td>
+        </tr>
+        <tr>
+          <td><b>Date of Birth<b></td>
+          <td><%= @user.dob %></td>
+        </tr>
+        <tr>
+          <td><%= link_to "Deposit", new_deposit_path(type: "user", id: @user) %></td>
+          <td><%= link_to "Withdraw", new_withdraw_path(type: "user", id: @user) %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

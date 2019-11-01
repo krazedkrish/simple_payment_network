@@ -1,0 +1,45 @@
+<div class="result-container">
+  <div class="result">
+    <div class="table">
+      <table class="bigger">
+        <tr>
+          <td><b>Team Name</b> </td>
+          <td><%= @team.team_name %></td>
+        </tr>
+      </table>
+    </div>
+<br />
+    <div class="table">
+      <table class="pretty">
+        <tr>
+          <th>First Name </th>
+          <th>Last Name</th>
+          <th>Date of Birth</th>
+          <th>Teams Joined</th>
+          <th>Actions</th>
+        </tr>
+        <% @team.users.each do |u| %>
+          <tr>
+            <td><%= u.first_name %></td>
+            <td><%= u.last_name %></td>
+            <td><%= u.dob %></td>
+            <td><%= u.teams.count %></td>
+            <td><%= link_to "View", u %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+<br />
+
+    <div class="table">
+      <table class="bigger">
+        <tr>
+          <td><%= link_to "Deposit", new_deposit_path(type: "team", id: @team) %></td>
+          <td><%= link_to "Withdraw", new_withdraw_path(type: "team", id: @team) %></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+

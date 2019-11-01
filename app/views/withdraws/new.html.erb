@@ -1,0 +1,20 @@
+<div class="result-container">
+  <div class="result">
+    <%= form_for @withdraw do |f| %>
+
+      <div>
+        <%= f.label "#{@type}'s Wallet_id: #{@wallet.id}" %> 
+        <%= f.hidden_field "from_wallet_id", value: @wallet.id %>
+        -->
+        <%= f.label "Destination Wallet" %>
+        <%= f.select "to_wallet_id", options_from_collection_for_select(@wallets, "id", "id") %>
+      </div>
+      <div>
+        <%= f.label "Amount" %>
+        <%= f.text_field "amount" %>
+      <div>
+        <%= f.submit 'Withdraw' %>
+      </div>
+    <% end %>
+  </div>
+</div>

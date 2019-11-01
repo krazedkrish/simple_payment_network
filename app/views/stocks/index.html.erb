@@ -1,0 +1,29 @@
+<div class="result-container">
+  <div class="result">
+    <div class="table">
+      <table class="pretty">
+        <tr>
+          <th>Company Code</th>
+          <th>Shares Count</th>
+          <th>Walled ID</th>
+          <th>Balance</th>
+          <th>Actions</th>
+        </tr>
+        <% @stocks.each do |s| %>
+          <tr>
+            <td><%= s.company_code %></td>
+            <td><%= s.share_counts %></td>
+            <td><%= s.wallet.id %></td>
+            <td><%= s.wallet.balance %></td>
+            <td><%= link_to "View", s %>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+
+    <div class="paginate">
+      <%= paginate @stocks %>
+    </div>
+
+  </div>
+</div>

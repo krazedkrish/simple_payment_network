@@ -1,0 +1,1 @@
+class Deposit < Transaction; end

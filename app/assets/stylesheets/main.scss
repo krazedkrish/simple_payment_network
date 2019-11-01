@@ -1,0 +1,254 @@
+// Place all the styles related to the people controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #00A1A7;
+  color: #002A54;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+nav.navbar {
+  background-color: #027D8A;
+  color: #01113F;
+  margin: 0;
+  padding: 15px;
+
+  .nav-container {
+    margin-left: 50px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: #002A54;
+      }
+    }
+  }
+  .nav-item {
+    display: inline;
+    background-color: #027D8A;
+    color: #002A54;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 15px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+  }
+}
+
+h1 {
+  background-color: #027D8A;
+  color: #01113F;
+  padding: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 40px;
+  font: 20px;
+}
+
+.uploader {
+  margin-left: 80px;
+  background-color: #00A1A7;
+  color: #002A54;
+}
+
+.result-container {
+  margin: 0 auto;
+  background-color: #1BB2B8;
+  color: #002A54;
+}
+
+.result {
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+input {
+
+      color: #01113F;
+      background-color: #027D8A;
+      border: 0;
+      border-radius: 6px;
+      radius: 2px;
+      padding: 10px;
+      margin: 10px;
+}
+
+nav.pagination{
+  margin: 0 auto;
+  display: inline-block;
+
+  span{
+    padding: 10px;
+    background-color: #027D8A;
+    margin: 5px;
+
+
+    &:hover {
+      background-color: #014E6D;
+    }
+
+    a {
+      color: #01113F;
+      background-color: #027D8A;
+
+      &:visited {
+        color: #01113F;
+        background-color: #027D8A;
+      }
+
+      &:hover {
+        color: #002A54;
+        background-color: #014E6D;
+      }
+    }
+  }
+}
+
+.paginate{
+  margin: 0;
+  text-align: center;
+}
+
+.clear{
+  float: clear;
+}
+
+
+a {
+  color: #01113F;
+
+  &:visited {
+    color: #002A54;
+  }
+
+  &:hover {
+    color: #002A54;
+  }
+}
+
+
+a.footer {
+  color: #01113F;
+
+  &:visited {
+    color: #002A54;
+  }
+
+  &:hover {
+    color: #002A54;
+    background-color: #000;
+  }
+}
+
+.search{
+  height: 45px;
+}
+
+table{
+  width:50%;
+  margin: 0 auto;
+}
+
+table.bigger{
+  width:30%;
+  td {
+    font-size: 14px;
+  }
+}
+
+form {
+  width:30%;
+  margin: 0 auto;
+  td {
+    font-size: 14px;
+  }
+}
+
+
+.left{
+  float: right;
+}
+.right {
+  float: right;
+}
+
+th {
+  padding-bottom: 10px;
+  text-align: left;
+
+  .affiliations {
+    min-width:50px;
+  }
+  .locations {
+    min-width:50px;
+  }
+  .vehicles {
+    min-width:50px
+  }
+}
+
+td {
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+label {
+  display: inline;
+  font-size: 20px;
+}

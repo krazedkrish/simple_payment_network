@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  balance: 9.99
+  locked: 9.99
+  status: 1
+  walletable_id: 
+  walletable_type: MyString
+
+two:
+  balance: 9.99
+  locked: 9.99
+  status: 1
+  walletable_id: 
+  walletable_type: MyString

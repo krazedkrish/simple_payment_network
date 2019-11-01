@@ -1,0 +1,28 @@
+<div class="result-container">
+  <div class="result">
+    <div class="table">
+      <table class="pretty">
+        <tr>
+          <th>Team Name</th>
+          <th>Members Count</th>
+          <th>Walled ID</th>
+          <th>Balance</th>
+          <th>Actions</th>
+        </tr>
+        <% @teams.each do |t| %>
+          <tr>
+            <td><%= t.team_name %></td>
+            <td><%= t.users.count %></td>
+            <td><%= t.wallet.id %></td>
+            <td><%= t.wallet.balance %></td>
+            <td><%= link_to "View", t %>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+
+    <div class="paginate">
+      <%= paginate @teams %>
+    </div>
+  </div>
+</div>

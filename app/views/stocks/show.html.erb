@@ -1,0 +1,20 @@
+<div class="result-container">
+  <div class="result">
+    <div class="table">
+      <table class="bigger">
+        <tr>
+          <td><b>Company Code</b> </td>
+          <td><%= @stock.company_code %></td>
+        </tr>
+        <tr>
+          <td><b>No of shares</b></td>
+          <td><%= @stock.share_counts %></td>
+        </tr>
+        <tr>
+          <td><%= link_to "Deposit", new_deposit_path(type: "stock", id: @stock) %></td>
+          <td><%= link_to "Withdraw", new_withdraw_path(type: "stock", id: @stock) %></td>
+        </tr>
+      </table>
+    </div>
+  </td>
+</td>

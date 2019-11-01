@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SimplePaymentNetwork</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container nav-container">
+        <%= link_to root_path do %>
+          <div class="nav-item">Users</div>
+        <% end %>
+        <%= link_to teams_path do %>
+          <div class="nav-item">Teams</div>
+        <% end %>
+        <%= link_to stocks_path do %>
+          <div class="nav-item">Stocks</div>
+        <% end %>
+      </div>
+    </nav>
+    <div class="flash">
+    <% flash.each do |key, value| %>
+      <%= content_tag :div, value, class: "flash #{key}" %>
+    <% end %>
+    </div>
+    <%= yield %>
+  </body>
+</html>

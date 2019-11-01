@@ -1,0 +1,20 @@
+<div class="result-container">
+  <div class="result">
+    <%= form_for @deposit do |f| %>
+
+      <div>
+        <%= f.label "Source Wallet" %>
+        <%= f.select "from_wallet_id", options_from_collection_for_select(@wallets, "id", "id") %>
+        -->
+        <%= f.label "#{@type}'s Wallet_id: #{@wallet.id}" %> 
+        <%= f.hidden_field "to_wallet_id", value: @wallet.id %>
+      </div>
+      <div>
+        <%= f.label "Amount" %>
+        <%= f.text_field "amount" %>
+      <div>
+        <%= f.submit 'Deposit' %>
+      </div>
+    <% end %>
+  </div>
+</div>
